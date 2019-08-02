@@ -11,6 +11,7 @@ The following field values need to be inputted into the config file:
 - email
 - password - in plain text
 There's no quality field because the API only returns the highest available quality FLAC.
+
 **You can't download ANY tracks with a free account.**
 
 # Update Log #
