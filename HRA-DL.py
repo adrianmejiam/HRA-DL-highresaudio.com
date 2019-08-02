@@ -53,7 +53,7 @@ def login(email, pwd):
 		else:
 			print("Signed in successfully.\n")
 
-			return loginGetReqJ['country'], loginGetReqJ['session_id'], loginGetReqJ['user_id'], loginGetReq.text
+			return loginGetReq.text
 	else:
 		print(f"Failed to sign in. Response from API: {loginGetReq.text}")
 		osCommands('p')
