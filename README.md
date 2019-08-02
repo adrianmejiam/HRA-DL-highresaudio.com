@@ -23,6 +23,7 @@ There's no quality field because the API only returns the highest available qual
 
 # Misc Info
 - Written around Python v3.6.7.      
+- If there's a booklet available, it'll be fetched.    
 - Any special characters that your OS doesn't support in filenames will be replaced with "-".    
 - Filename clashes will be handled inside of album folders. If a clash occurs inside an album folder, the previous file will be deleted.     
 If you need to get in touch: Sorrow#5631, [Reddit](https://www.reddit.com/user/Sorrow446)
