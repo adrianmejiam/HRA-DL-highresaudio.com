@@ -3,7 +3,9 @@ Tool written in Python to download streamable FLACs from highresaudio.com.
 
 **This is the initial version, so the following are NOT implemented yet:**
 - CLI support    
-- tagging customization    
+- tagging customization   
+
+[Pre-compiled binaries.](https://github.com/Sorrow446/HRA-DL-highresaudio.com/releases)
 
 # Setup
 ## Mandatory ##
