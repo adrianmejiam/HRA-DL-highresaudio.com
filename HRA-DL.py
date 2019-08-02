@@ -129,7 +129,7 @@ def main(userData):
 	albumFolderS = dirSetup(f"HRA-DL downloads/{sanitizeFname(albumFolder)}")
 	for tracks in [x for x in metadata['data']['results']['tracks']]:
 		preFname = f"HRA-DL downloads/{sanitizeFname(albumFolder)}/{str(tracks['trackNumber']).zfill(2)}.flac"
-		postFname = f"HRA-DL downloads/{sanitizeFname(albumFolder)}/{str(tracks['trackNumber']).zfill(2)}. {tracks['title']}.flac"
+		postFname = f"HRA-DL downloads/{sanitizeFname(albumFolder)}/{str(tracks['trackNumber']).zfill(2)}. {sanitizeFname(tracks['title'])}.flac"
 		fileSetup(preFname)
 		fileSetup(postFname)
 		fetchTrack(albumId, sanitizeFname(albumFolder), preFname, f"{tracks['format']} kHz FLAC", str(tracks['trackNumber']).zfill(2), tracks['title'], str(len(tracks)).zfill(2), tracks['url'])
