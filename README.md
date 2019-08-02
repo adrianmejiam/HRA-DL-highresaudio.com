@@ -7,6 +7,8 @@ Tool written in Python to download streamable FLACs from highresaudio.com.
 
 [Pre-compiled binaries.](https://github.com/Sorrow446/HRA-DL-highresaudio.com/releases)
 
+![](https://thoas.feralhosting.com/sorrow/HRA-DL/b1.jpg)
+
 # Setup
 ## Mandatory ##
 The following field values need to be inputted into the config file:
