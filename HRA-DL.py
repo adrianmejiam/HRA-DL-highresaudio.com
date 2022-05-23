@@ -133,10 +133,10 @@ def main(userData):
 	metadata = fetchMetadata(albumId, userData)
 	albumFolder = f"{metadata['data']['results']['artist']} - {metadata['data']['results']['title']}"
 	print(f"{albumFolder}\n")
-	albumFolderS = dirSetup(f"HRA-DL downloads/{sanitizeFname(albumFolder)}")
+	albumFolderS = dirSetup(f"/data/data/com.termux/files/home/storage/music/{sanitizeFname(albumFolder)}")
 	for tracks in [x for x in metadata['data']['results']['tracks']]:
-		preFname = f"HRA-DL downloads/{sanitizeFname(albumFolder)}/{str(tracks['trackNumber']).zfill(2)}.flac"
-		postFname = f"HRA-DL downloads/{sanitizeFname(albumFolder)}/{str(tracks['trackNumber']).zfill(2)}. {sanitizeFname(tracks['title'])}.flac"
+		preFname = f"/data/data/com.termux/files/home/storage/music/{sanitizeFname(albumFolder)}/{str(tracks['trackNumber']).zfill(2)}.flac"
+		postFname = f"/data/data/com.termux/files/home/storage/music/{sanitizeFname(albumFolder)}/{str(tracks['trackNumber']).zfill(2)}. {sanitizeFname(tracks['title'])}.flac"
 		fileSetup(preFname)
 		fileSetup(postFname)
 		fetchTrack(albumId, sanitizeFname(albumFolder), preFname, f"{tracks['format']} kHz FLAC", str(tracks['trackNumber']).zfill(2), tracks['title'], str(len([x for x in metadata['data']['results']['tracks']])).zfill(2), tracks['url'])
