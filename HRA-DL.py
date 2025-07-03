@@ -8,6 +8,7 @@ import json
 import time
 import platform
 import traceback
+import urllib3
 
 # Third party
 import requests
