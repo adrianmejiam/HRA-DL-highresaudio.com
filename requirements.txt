@@ -1,3 +1,4 @@
 bs4
 tqdm
 requests==2.22.0
+urllib3
